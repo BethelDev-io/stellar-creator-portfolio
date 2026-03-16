@@ -173,12 +173,10 @@ export default function Home() {
             <p className="text-lg text-muted-foreground mb-8">
               Explore our directory of stellar creators and start your next amazing project.
             </p>
-            <Link href="/creators">
-              <Button size="lg" className="group">
-                Get Started
-                <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
+            <Button size="lg" className="group" onClick={() => router.push('/creators')}>
+              Get Started
+              <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
         </section>
       </main>
